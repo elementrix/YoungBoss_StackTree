@@ -1,10 +1,55 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="KR">
 <head>
     <meta charset="UTF-8">
-    <title>StackTree</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Stack Tree</title>
 </head>
 <body>
-    <h1>LOGIN PAGE</h1>
+
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+
+        <h1 class="login-head">LOGIN</h1>
+
+        <div class="login-input">
+            <input name="username" type="text" placeholder="아이디(이메일)">
+            <img src="{% static 'img/ico_login_username_white.png' %}">
+        </div>
+        <div class="login-input">
+            <input name="passward" type="password" placeholder="비밀번호">
+            <img src="{% static 'img/ico_login_password_white.png' %}">
+        </div>
+
+        <span class="login-caution-message">
+            <img class="ico-caution" src="{% static 'img/ico_login_caution.png' %}">
+            <p class="msg-caution">비밀번호가 일치하지 않습니다.</p>
+        </span>
+
+        <img class="login-btn" src="{% static 'img/btn_login.png' %}" alt="">
+        
+        <p class="login-other-msg">다른 계정으로 로그인 하기</p>
+        
+        <div class="login-other-method-btns">
+            <img src="{% static 'img/btn_login_google.png' %}" class="btn-other-method">
+            <img src="{% static 'img/btn_login_kakao.png' %}" class="btn-other-method">
+            <img src="{% static 'img/btn_login_github.png' %}" class="btn-other-method">
+        </div>
+
+        <p class="login-other-msg">or</p>
+
+        <div class="other-case">
+            <span class="login-other-case-p">
+                <a class="login-other-case-link" href="">회원가입</a>하고 캐릭터 생성 | 
+                <a class="login-other-case-link" href="">비밀번호를 잊으셨나요?</a>
+            </span>
+        </div>
+
+        <input type="submit" value="로그인">
+
+    </form>
+    
 </body>
 </html>
