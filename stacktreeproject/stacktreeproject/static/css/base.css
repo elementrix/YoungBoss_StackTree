@@ -2,6 +2,75 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+    font-family: 'IBM-Plex-Sans-Bold';
+    src: url('../font/IBMPlexSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    src: url('../font/IBMPlexSansKR-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-ExtraLight';
+    src: url('../font/IBMPlexSansKR-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Light';
+    src: url('../font/IBMPlexSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Medium';
+    src: url('../font/IBMPlexSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Regular';
+    src: url('../font/IBMPlexSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Text';
+    src: url('../font/IBMPlexSansKR-Text.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Thin';
+    src: url('../font/IBMPlexSansKR-Thin.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Black';
+    src: url('../font/NotoSansKR-Black.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Bold';
+    src: url('../font/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Light';
+    src: url('../font/NotoSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Medium';
+    src: url('../font/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Regular';
+    src: url('../font/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Thin';
+    src: url('../font/NotoSansKR-Thin.otf');
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,10 +143,10 @@ table {
 
 .nav-menu-item {
     font-family: 'Noto-Sans-KR-Medium';
+    text-decoration: none;
     font-size: 14px;
     text-align: right;
 
     color: #343434;
     margin-left: 1vw;
 }
-
