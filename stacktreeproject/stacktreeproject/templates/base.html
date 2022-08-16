@@ -9,32 +9,37 @@
     {% endblock %}
 </head>
 <body>
-    <nav class="navbar">
+    <div id="body-wrapper">
+        <div id="body-content">
+            <nav class="navbar">
 
-        <img class="nav-logo" src="{% static 'img/nav_stack_tree_logo_x2.png' %}" alt="">
+                <img class="nav-logo" src="{% static 'img/nav_stack_tree_logo_x2.png' %}" alt="">
+        
+                <ul class="nav-not-login-menu" >
+                    <li><a class="nav-menu-item" href="">스킬트리검색</a></li>
+                    <li><a class="nav-menu-item" href="">로그인</a></li>
+                    <li><a class="nav-menu-item" href="">캐릭터 생성(회원가입)</a></li>
+                </ul>
+        
+            </nav>
+        
+            {% block content %}
+            {% endblock %}
 
-        <ul class="nav-not-login-menu" >
-            <li><a class="nav-menu-item" href="">스킬트리검색</a></li>
-            <li><a class="nav-menu-item" href="">로그인</a></li>
-            <li><a class="nav-menu-item" href="">캐릭터 생성(회원가입)</a></li>
-        </ul>
-
-    </nav>
-
-    {% block content %}
-    {% endblock %}
-
-    <footer>
-        <nav class="footer">
-            <ul><a class="footer-copyright">Copyright @ Team STACKTREE</a></ul>
+        </div>
+    
+        <footer class="footer">
+            <a class="footer-copyright">Copyright@ Team STACKTREE</a>
             <ul class="footer-rightside">
                 <li><a class="footer-item" href="">이용약관</a></li>
-                <li><a class="footer-item">|</a></li>
+                <li class="footer-item"> | </li>
                 <li><a class="footer-item" href="">개인정보보호정책</a></li>
-                <li><a class="footer-item">|</a></li>
-                <li><a class="footer-item" href="">stacktree소개</a></li>
+                <li class="footer-item"> | </li>
+                <li><a class="footer-item" href="">stacktree소개 </a></li>
             </ul>
-        </nav>
-    </footer>
+        </footer>
+
+    </div>
+    
 </body>
 </html>
