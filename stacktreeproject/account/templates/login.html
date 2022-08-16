@@ -18,27 +18,30 @@
 
         <div class="login-input">
             <input name="username" type="text" placeholder="아이디(이메일)">
-            <img src="{% static 'img/ico_login_username_white.png' %}">
+            <img class="ico-login-username" src="{% static 'img/ico_login_username_white_2x.png' %}">
         </div>
+        <hr class="login-input-line">
+
         <div class="login-input">
             <input name="passward" type="password" placeholder="비밀번호">
-            <img src="{% static 'img/ico_login_password_white.png' %}">
+            <img class="ico-login-password" src="{% static 'img/ico_login_password_white_2x.png' %}">
+        </div>
+        <hr class="login-input-line">
+
+        <div class="login-caution-message">
+            <img class="ico-caution" src="{% static 'img/ico_login_caution_2x.png' %}">
+            <p class="msg-caution">비밀번호가 일치하지 않습니다.</p> 
         </div>
 
-        <span class="login-caution-message">
-            <img class="ico-caution" src="{% static 'img/ico_login_caution.png' %}">
-            비밀번호가 일치하지 않습니다.
-        </span>
-
         
-        <button type="submit" name="df" value="로그인"><img src="{% static 'img/btn_login.png' %}" alt="Login"></button>
+        <button class="btn-login" type="submit" name="df" value="로그인"><img class="btn-login-img" src="{% static 'img/btn_login_2x.png' %}" alt="Login"></button>
         
         <p class="login-other-msg">다른 계정으로 로그인 하기</p>
         
         <div class="login-other-method-btns">
-            <img src="{% static 'img/btn_login_google.png' %}" class="btn-other-method">
-            <img src="{% static 'img/btn_login_kakao.png' %}" class="btn-other-method">
-            <img src="{% static 'img/btn_login_github.png' %}" class="btn-other-method">
+            <img class="btn-other-method" src="{% static 'img/btn_login_google_2x.png' %}" class="btn-other-method">
+            <img class="btn-other-method" src="{% static 'img/btn_login_kakao_2x.png' %}" class="btn-other-method">
+            <img class="btn-other-method" src="{% static 'img/btn_login_github_2x.png' %}" class="btn-other-method">
         </div>
 
         <p class="login-other-msg">or</p>
