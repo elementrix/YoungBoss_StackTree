@@ -5,16 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <title>ST</title>
+    {% block extrahead %}
+    {% endblock %}
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <div class="navs navitem1"><button>스킬트리검색</button></div>
-            <div class="navs navitem1"><button>로그인</button></div>
-            <div class="navs navitem1"><button>캐릭터 생성(회원가입)</button></div>
-            <div class="navs logo">스택트리 사진 들어가야함</div>
-        </div>
+    <nav class="navbar">
+
+        <img class="nav-logo" src="{% static 'img/nav_stack_tree_logo_x2.png' %}" alt="">
+
+        <ul class="nav-not-login-menu" >
+            <li><a class="nav-menu-item" href="">스킬트리검색</a></li>
+            <li><a class="nav-menu-item" href="">로그인</a></li>
+            <li><a class="nav-menu-item" href="">캐릭터 생성(회원가입)</a></li>
+        </ul>
+
     </nav>
 
     {% block content %}

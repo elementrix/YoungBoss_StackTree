@@ -47,36 +47,23 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-header{
+.navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    height: 65px;
+    width: auto;
+
+    padding-left: 24%;
+    padding-right: 24%;
+
+    box-shadow: 0px 2px 1px 0px #F0F0F0 ;
 }
 
-.nav{
-    margin-top: 10px;
-    padding-right: 9px;
+.nav-not-login-menu {
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
 }
 
-.nav button{
-    padding: 0;
-    border: none;
-    background: none;
-}
-
-
-.navitem1 button:hover{
-    text-decoration: underline;
-}
-
-.navlogo button:hover{
-
-}
-
-.navs{
-    margin: 10px;
-}

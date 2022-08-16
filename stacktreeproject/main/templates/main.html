@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
+<head>
+    {% load static %}   
+    
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Stack Tree Main</title>
+    {% endblock %}
+</head>
+
 {% block content %}
 
     <h1>MAIN PAGE</h1>

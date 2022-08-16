@@ -1,13 +1,15 @@
-{% load static %}
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="KR">
 <head>
-    <meta charset="UTF-8">
+    {% load static %}   
+    
+    {% block extrahead %}
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <title>Stack Tree</title>
+    <title>Login</title>
+    {% endblock %}
 </head>
-<body>
+
+{% block content %}
 
     <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
@@ -25,10 +27,11 @@
 
         <span class="login-caution-message">
             <img class="ico-caution" src="{% static 'img/ico_login_caution.png' %}">
-            <p class="msg-caution">비밀번호가 일치하지 않습니다.</p>
+            비밀번호가 일치하지 않습니다.
         </span>
 
-        <img class="login-btn" src="{% static 'img/btn_login.png' %}" alt="">
+        
+        <button type="submit" name="df" value="로그인"><img src="{% static 'img/btn_login.png' %}" alt="Login"></button>
         
         <p class="login-other-msg">다른 계정으로 로그인 하기</p>
         
@@ -46,10 +49,7 @@
                 <a class="login-other-case-link" href="">비밀번호를 잊으셨나요?</a>
             </span>
         </div>
-
-        <input type="submit" value="로그인">
-
+        
     </form>
-    
-</body>
-</html>
+
+{% endblock %}

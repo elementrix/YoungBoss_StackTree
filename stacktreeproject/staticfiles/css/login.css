@@ -68,11 +68,6 @@
     src: url('../font/NotoSansKR-Thin.otf');
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
 form {
     display: flex;
     flex-direction: column;
