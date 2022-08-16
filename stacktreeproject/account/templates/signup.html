@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html lang="KR">
+{% extends 'base.html' %}
+
 <head>
-    <meta charset="UTF-8">
-    <title>StackTree</title>
+    {% load static %}   
+    
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+    {% endblock %}
 </head>
-<body>
-    <h1>SIGNUP PAGE</h1>
-</body>
-</html>
+
+{% block content %}
+
+    <!-- <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+
+        <h1 class="login-head">LOGIN</h1>
+
+        <div class="login-input">
+            <input name="username" type="text" placeholder="아이디(이메일)">
+            <img class="ico-login-username" src="{% static 'img/ico_login_username_white_2x.png' %}">
+        </div>
+        <hr class="login-input-line">
+
+        <div class="login-input">
+            <input name="passward" type="password" placeholder="비밀번호">
+            <img class="ico-login-password" src="{% static 'img/ico_login_password_white_2x.png' %}">
+        </div>
+        <hr class="login-input-line">
+
+        <div class="login-caution-message">
+            <img class="ico-caution" src="{% static 'img/ico_login_caution_2x.png' %}">
+            <p class="msg-caution">비밀번호가 일치하지 않습니다.</p> 
+        </div> -->
+
+        
+        <button class="btn-login" type="submit" name="df" value="다음단계"><img class="btn-login-img" src="{% static 'img/btn_login_2x.png' %}" alt="Login"></button>
+        
+        <!-- <p class="login-other-msg">다른 계정으로 로그인 하기</p> -->
+        
+        
+    </form>
+
+{% endblock %}
