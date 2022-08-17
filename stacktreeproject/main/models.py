@@ -6,7 +6,7 @@ class Language(models.Model):
     Language_name=models.CharField(max_length=45)
     Language_description=models.TextField
 
-class LanguageSyntax(models.Model):
+class Language_syntax(models.Model):
     LanguageSyntax_id=models.AutoField(primary_key=True)
     LSyntax_title=models.CharField(max_length=45)
     LSyntax_difficulty=models.IntegerField
@@ -20,7 +20,7 @@ class Framework(models.Model):
     Framework_name=models.CharField(max_length=45)
     Framework_description=models.TextField
 
-class FrameworkSyntax(models.Model):
+class Framework_syntax(models.Model):
     FrameworkSyntax_id=models.AutoField(primary_key=True)
     FSyntax_title=models.CharField(max_length=45)
     FSyntax_difficulty=models.IntegerField
@@ -29,12 +29,12 @@ class FrameworkSyntax(models.Model):
     FSyntax_teer=models.CharField(max_length=45)
     FSyntax_order=models.IntegerField 
 
-class Language_to_master_Framework(models.Model):
+class Language_to_master_framework(models.Model):
     Language_id=models.ForeignKey('Language',on_delete=models.CASCADE)
     Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
 
-class Syntax_to_master_Framework(models.Model):
-    Language_Syntax_id=models.ForeignKey('LanguageSyntax',on_delete=models.CASCADE)
+class Syntax_to_master_framework(models.Model):
+    Language_Syntax_id=models.ForeignKey('Language_syntax',on_delete=models.CASCADE)
     Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
 
 
