@@ -213,3 +213,7 @@ input::placeholder{
 .other-case {
     margin-top: 35px;
 }
+
+.password {
+    float: right;
+}
