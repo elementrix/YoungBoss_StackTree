@@ -29,11 +29,33 @@ class FrameworkSyntax(models.Model):
     FSyntax_teer=models.CharField(max_length=45)
     FSyntax_order=models.IntegerField 
 
+class Language_to_master_Framework(models.Model):
+    Language_id=models.ForeignKey('Language',on_delete=models.CASCADE)
+    Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
+
+class Syntax_to_master_Framework(models.Model):
+    Language_Syntax_id=models.ForeignKey('LanguageSyntax',on_delete=models.CASCADE)
+    Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
+
+
 class Company(models.Model):
+    Company_id=models.AutoField(primary_key=True)
     Company_name=models.CharField(max_length=45)
-    Company_adress=models.TextField
-    Field_id=models.ForeignKey('Field',on_delete=models.CASCADE)
-    Company_description=models.TextField
+    Company_Address=models.TextField()
+    Field_id=models.ForeignKey('Field', on_delete=models.CASCADE)
+    Company_description=models.TextField()
+
 
 class Tree(models.Model):
     Tree_id=models.AutoField(primary_key=True)
+
+class Job(models.Model):
+    Job_id=models.AutoField(primary_key=True)
+    Job_name=models.CharField(max_length=45)
+    Tree_id=models.ForeignKey(Tree, on_delete=models.CASCADE)
+    Field_id=models.ForeignKey('Field', on_delete=models.CASCADE)
+    Company_id=models.ForeignKey(Company, on_delete=models.CASCADE)
+
+class Field(models.Model):
+    Field_id=models.AutoField(primary_key=True)
+    Field_name=models.CharField(max_length=45)
