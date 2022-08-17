@@ -59,3 +59,15 @@ class Job(models.Model):
 class Field(models.Model):
     Field_id=models.AutoField(primary_key=True)
     Field_name=models.CharField(max_length=45)
+
+class Framework_for_tree(models.Model):
+     Framework_id=models.ManytoManyField('Framework',blank=True)
+     Tree_id=models.ManytoManyField('Tree',blank=True)
+     order=models.IntegerField(null=False)
+     essential=models.BooleanField(default=True)
+
+class Language_for_tree(models.Model):
+     Language_id=models.ManytoManyField('Language',blank=True)
+     Tree_id=models.ManytoManyField('Tree',blank=True)
+     order=models.IntegerField(null=False)
+     essential=models.BooleanField(default=True)
