@@ -1,13 +1,12 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 #유저정보
 class User(models.Model):
-    user_id = models.AutoField(primary_key=True)
+    user_id = models.OneToOneField(User, on_delete=models.CASCADE)
     user_Password = models.CharField(max_length=45)
     user_Email = models.CharField(max_length=45)
     user_HP = models.TextField()
-    user_Birthday = models.DateTimeField(auto_now=False)
 
     tree_id = models.ManyToManyField('main.Tree',blank=True, through="User_seleceted_tree")
     mastered_language_syntax = models.ManyToManyField('main.Language_syntax', blank=True, through="User_mastered_language_syntax",related_name='mastered_language')
