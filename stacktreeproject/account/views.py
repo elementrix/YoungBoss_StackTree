@@ -6,6 +6,8 @@ import json
 from django.http import JsonResponse
 from django.views import View
 from account.validation  import validate_email
+from django.contrib.auth.models import User
+from django.contrib import auth
 
 # Create your views here.
 def signup(request):   #회원가입 페이지를 보여주기 위한 함수
@@ -47,5 +49,23 @@ def signup(request):   #회원가입 페이지를 보여주기 위한 함수
 #     return render(request, 'signup.html')
 
 def login(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user=auth.authenticate(request, username=username, password=password)
 
-    return render(request, 'login.html')
+        if user is not None:
+            auth.login(request,user)
+            return redirect('/')
+            
+        else:
+            return render(request, 'login.html')
+
+    else:
+        return render(request, 'login.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+
+

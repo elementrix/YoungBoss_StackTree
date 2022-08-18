@@ -12,7 +12,16 @@
     <div id="body-wrapper">
         <div id="body-content">
             <nav class="navbar">
+                {% if user.is_authenticated %}
+                <a href="{% url 'main' %}"><img class="nav-logo" src="{% static 'img/nav_stack_tree_logo_x2.png' %}" alt=""></a>
+        
+                <ul class="nav-not-login-menu" >
+                    <li><a class="nav-menu-item" href="">스킬트리검색</a></li>
+                    <li><a class="nav-menu-item" href="{% url 'logout' %}">로그아웃</a></li>
+                    <li><a class="nav-menu-item" href="{% url 'signup' %}">캐릭터 생성(회원가입)</a></li>
+                </ul>
 
+                {% else %}
                 <a href="{% url 'main' %}"><img class="nav-logo" src="{% static 'img/nav_stack_tree_logo_x2.png' %}" alt=""></a>
         
                 <ul class="nav-not-login-menu" >
@@ -20,7 +29,8 @@
                     <li><a class="nav-menu-item" href="{% url 'login' %}">로그인</a></li>
                     <li><a class="nav-menu-item" href="{% url 'signup' %}">캐릭터 생성(회원가입)</a></li>
                 </ul>
-        
+
+            {% endif %}            
             </nav>
         
             {% block content %}
