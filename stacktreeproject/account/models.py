@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-
 #유저정보
 class Profile(models.Model):
     user_id = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -25,23 +24,10 @@ class User_seleceted_tree(models.Model):
     user_id = models.ForeignKey('Profile',on_delete = models.CASCADE)
     tree_id = models.ForeignKey('main.Tree',on_delete = models.CASCADE)
 
-
-#<<<<<<< HEAD
-class Like(models.Model):
-    User_id=models.ManytoManyField('User',blank=False)
-    Company_id=models.ManytoManyField('Company',blank=True)
-    Job_id=models.ManytoManyField('Job',blank=True)
-    Tree_id=models.ManytoManyField('Tree',blank=True)
-    Framework_id=models.ManytoManyField('Framework',blank=True)
-    Language_id=models.ManytoManyField('Language',blank=True)
-
-#=======
 #유저가 마스터 한 언어 문법들
 class User_mastered_language_syntax(models.Model):
     user_id = models.ForeignKey('Profile',on_delete = models.CASCADE)
     language_syntax_id = models.ForeignKey('main.Language_syntax',on_delete = models.CASCADE,)
-#>>>>>>> 52d9c4dbce5c898e576c459dfb711a795635d9fd
-
 
 #유저가 마스터 한 프레임워크 문법들
 class User_mastered_framework_syntax(models.Model):
