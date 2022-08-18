@@ -1,9 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
 
 #유저정보
 class Profile(models.Model):
-    user_id = models.OneToOneField(User, on_delete=models.CASCADE)
+    user_id = models.AutoField(primary_key=True)
     user_Password = models.CharField(max_length=45)
     user_Email = models.CharField(max_length=45)
     user_HP = models.TextField()
