@@ -4,37 +4,79 @@
     {% load static %}   
     
     {% block extrahead %}
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
     <title>Login</title>
     {% endblock %}
 </head>
 
 {% block content %}
 
-    <!-- <form action="{% url 'login' %}" method="post">
+    <form action="{% url 'login' %}" method="post">
         {% csrf_token %}
 
-        <h1 class="login-head">LOGIN</h1>
-
-        <div class="login-input">
-            <input name="username" type="text" placeholder="아이디(이메일)">
-            <img class="ico-login-username" src="{% static 'img/ico_login_username_white_2x.png' %}">
+        <div class="signup-head">
+            <img class="btn-signup-head" src="{% static 'img/btn_signup_head.png' %}">
         </div>
-        <hr class="login-input-line">
-
-        <div class="login-input">
-            <input name="passward" type="password" placeholder="비밀번호">
-            <img class="ico-login-password" src="{% static 'img/ico_login_password_white_2x.png' %}">
-        </div>
-        <hr class="login-input-line">
-
-        <div class="login-caution-message">
-            <img class="ico-caution" src="{% static 'img/ico_login_caution_2x.png' %}">
-            <p class="msg-caution">비밀번호가 일치하지 않습니다.</p> 
-        </div> -->
-
         
-        <button class="btn-login" type="submit" name="df" value="다음단계"><img class="btn-login-img" src="{% static 'img/btn_login_2x.png' %}" alt="Login"></button>
+        <div class="signup-subhead">
+            <img class="btn-signup-subhead" src="{% static 'img/btn_signup_subhead.png' %}">
+        </div>
+
+        <div class="choose-button">
+            <img class="btn-signup-choosebutton1" src="{% static 'img/btn_signup_choosebutton1_green.png' %}">
+            <img class="btn-signup-choosebutton2" src="{% static 'img/btn_signup_choosebutton2_grey.png' %}">
+            <img class="btn-signup-choosebutton3" src="{% static 'img/btn_signup_choosebutton3_grey.png' %}">
+        </div>
+
+        <div class="name">
+            <h1>* 이름</h1>
+            <input name="name" type="name" placeholder="용사님의 이름은 무엇인가요?">
+            <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+        </div>
+        
+        <div class="nickname">
+            <h1>* 닉네임</h1>
+            <input name="nickname" type="name" placeholder="용사님을 어떻게 불러드릴까요?">
+            <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+        </div>
+
+        <div class="email">
+            <h1>* 이메일</h1>
+            <input name="email" type="name" placeholder="용사님의 이메일 주소를 알려주세요">
+            <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+        </div>
+
+        <div class="email-caution-message">
+            <img class="ico-caution" src="{% static 'img/ico_login_caution_2x.png' %}">
+            <p class="msg-caution">잘못된 이메일 형식입니다</p> 
+        </div>
+
+        <div class="password">
+            <h1>* 비밀번호</h1>
+            <div class="password1">
+                <input name="password1" type="password" placeholder="영문+숫자 조합으로 8자리 이상 입력해주세요">
+                <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+                <img class="ico-signup-closedeyes" src="{% static 'img/ico_signup_closedeyes.png' %}">
+            </div>
+            <div class="password2">
+                <input name="password2" type="password" placeholder="비밀번호 확인">
+                <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+                <img class="ico-signup-opendeyes" src="{% static 'img/ico_signup_openeyes.png' %}">
+            </div>
+        </div>
+        
+        <div class="password-caution-message">
+            <img class="ico-caution" src="{% static 'img/ico_login_caution_2x.png' %}">
+            <p class="msg-caution">비밀번호가 일치하지 않습니다</p> 
+        </div>
+
+        <div class="github-address">
+            <h1>* GitHub 주소</h1>
+            <input name="github-email" type="name" placeholder="용사님의 gitHub 주소를 알려주세요">
+            <!-- <img class="btn-signup-box" src="{% static 'img/btn_signup_box.png' %}"> -->
+        </div>
+        
+        <button class="next-step" type="submit" name="dff" value="다음단계"><img class="btn-signup-nextstep" src="{% static 'img/btn_signup_nextstep.png' %}" alt="Login"></button>
         
         <!-- <p class="login-other-msg">다른 계정으로 로그인 하기</p> -->
         

@@ -30,12 +30,12 @@ class FrameworkSyntax(models.Model):
     FSyntax_order=models.IntegerField 
 
 class Language_to_master_Framework(models.Model):
-    Language_id=models.ForeignKey('Language',on_delete=models.CASCADE)
-    Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
+    Language_id=models.ManyToManyField('Language',on_delete=models.CASCADE)
+    Framework_id=models.ManyToManyField('Framework',on_delete=models.CASCADE)
 
 class Syntax_to_master_Framework(models.Model):
-    Language_Syntax_id=models.ForeignKey('LanguageSyntax',on_delete=models.CASCADE)
-    Framework_id=models.ForeignKey('Framework',on_delete=models.CASCADE)
+    Language_Syntax_id=models.ManyToManyField('LanguageSyntax',on_delete=models.CASCADE)
+    Framework_id=models.ManyToManyField('Framework',on_delete=models.CASCADE)
 
 
 class Company(models.Model):

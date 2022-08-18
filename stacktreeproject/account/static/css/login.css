@@ -76,7 +76,7 @@ form {
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 5vh;
     margin-bottom: auto;
 }
 
@@ -212,4 +212,8 @@ input::placeholder{
 
 .other-case {
     margin-top: 35px;
+}
+
+.password {
+    float: right;
 }
