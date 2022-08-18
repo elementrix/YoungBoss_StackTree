@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 #유저정보
 class Profile(models.Model):
     user_id = models.AutoField(primary_key=True)
-    user_Password = models.CharField(max_length=45)
-    user_Email = models.CharField(max_length=45)
+    user_password = models.CharField(max_length=45)
+    user_email = models.EmailField(max_length= 200, unique=True)
     user_HP = models.TextField()
 
     tree_id = models.ManyToManyField('main.Tree',blank=True, through="User_seleceted_tree")
@@ -19,6 +19,12 @@ class Profile(models.Model):
     framework = models.ManyToManyField('main.Framework',blank=True, through='Like_framework')
     language = models.ManyToManyField('main.Language',blank=True, through='Like_language')
 
+    #기본 문자열 사용자 임의로 지정
+    def __str__(self):
+        return self.user.name
+
+    class Meta:
+        db_table='test_user'
 
 #유저가 가지고 있는 트리
 class User_seleceted_tree(models.Model):
