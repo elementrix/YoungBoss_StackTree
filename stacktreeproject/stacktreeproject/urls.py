@@ -22,9 +22,6 @@ urlpatterns = [
     path('', main.views.main, name = 'main'),
     path('result/', main.views.result, name = 'result'),
     path('account/', include('account.urls')),
-<<<<<<< HEAD
     path('position_detail/', main.views.position_detail, name = 'position_detail'),
-=======
     path('mypage/', main.views.mypage, name = 'mypage'),
->>>>>>> 6229d492e89ae84a77142cbb9326f1b36f2ddf48
 ]
