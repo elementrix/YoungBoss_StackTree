@@ -23,10 +23,10 @@ class UserAdmin(BaseUserAdmin):
         ("Permissions",{'fields':('is_admin',)})
     )
 
-    add_fieldsets = (
-            (None,{'fields':('name','email','password')}),
-            ("Personal info",{'fields':})
-        ),
+    add_fieldsets = (None, {
+            'classes': ('wide',),
+            'fields': ('name','email','real_name', 'password1', 'password2'),
+        }),
     search_fields = ('email',)
     ordering = ('email',)
     filter_horizontal = ()
