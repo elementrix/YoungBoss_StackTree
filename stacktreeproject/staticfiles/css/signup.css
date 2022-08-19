@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'IBM-Plex-Sans-Bold';
+    src: url('../font/IBMPlexSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    src: url('../font/IBMPlexSansKR-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-ExtraLight';
+    src: url('../font/IBMPlexSansKR-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Light';
+    src: url('../font/IBMPlexSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Medium';
+    src: url('../font/IBMPlexSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Regular';
+    src: url('../font/IBMPlexSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Text';
+    src: url('../font/IBMPlexSansKR-Text.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Thin';
+    src: url('../font/IBMPlexSansKR-Thin.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Black';
+    src: url('../font/NotoSansKR-Black.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Bold';
+    src: url('../font/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Light';
+    src: url('../font/NotoSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Medium';
+    src: url('../font/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Regular';
+    src: url('../font/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Thin';
+    src: url('../font/NotoSansKR-Thin.otf');
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 394px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.signup-head {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.signup-subhead {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.choose-button {
+    text-align: center;
+    margin-top: 39.8px;
+    white-space: nowrap;
+}
+
+.btn-signup-choosebutton1 {
+    margin-right: 17px;
+}
+
+.btn-signup-choosebutton2 {
+    margin-right: 17px;
+}
+
+
+.name{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.nickname{
+    margin-bottom: 26px;
+}
+
+
+h1 {
+    font-family: IBM-Plex-Sans-Bold;
+    font-size: 30px;
+    color : black;
+}
+
+.email-caution-message {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 600px;
+    text-align: right;
+    margin-bottom: 26px;
+}
+
+.password-caution-message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 600px;
+    margin-bottom: 26px;
+}
+
+input {
+    border:none;
+    border-right:0px;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+
+    background: transparent;
+
+    font-family: Noto-Sans-KR-Regular;
+    font-size: 18px;
+    color: #269F71;
+
+    width: 368px;
+    height: 23px;
+    width: 450px;
+    height: 50px;
+    flex-grow: 0;
+    margin: 8px 2px 8px 0;
+    padding: 8px 190px 10px 16px;
+    border-radius: 40px;
+    border: solid 1px #d9d9d9;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+
+input::placeholder{
+    font-family: Noto-Sans-KR-Regular;
+    font-size: 18px;
+    color: #d9d9d9;
+}
+
+.ico-caution {
+    width: 19px;
+    height: 19px;
+}
+
+.msg-caution {
+    color: #B52257;
+    font-family: Noto-Sans-KR-Medium;
+    font-size: 12px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+
+.password1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+.password2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+}
+
+.ico-signup-closedeyes {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 580px;
+}
+
+.ico-signup-opendeyes {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 580px;
+}
+
+.next-step {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    border: 0;
+    outline: 0;
+    background-color: white;
+}

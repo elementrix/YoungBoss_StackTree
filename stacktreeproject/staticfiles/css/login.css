@@ -76,6 +76,8 @@ form {
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: auto;
 }
 
 h1 {
@@ -118,8 +120,8 @@ input {
 }
 
 .login-head {
-    margin-top: 20%;
-    margin-bottom: 81px;
+    margin-top: 20px ;
+    margin-bottom: 65px;
 }
 
 .ico-login-username {
@@ -210,4 +212,8 @@ input::placeholder{
 
 .other-case {
     margin-top: 35px;
+}
+
+.password {
+    float: right;
 }
