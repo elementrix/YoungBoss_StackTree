@@ -7,6 +7,7 @@ from django.views import View
 from account.validation  import validate_email
 from django.contrib.auth.models import User
 from django.contrib import auth
+from main.models import Language
 
 # Create your views here.
 def signup(request):   #회원가입 페이지를 보여주기 위한 함수
@@ -66,5 +67,13 @@ def login(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def stack_able_search(request):
+    url_parameter = request.GET.get("q",None)
+
+    if url_parameter: #사용자가 입력한 query 값이 있다면
+        results = Language.objects.filter(title__contains=url_parameter)
+    else:
+        resuls = Language.objects.all()
 
 
