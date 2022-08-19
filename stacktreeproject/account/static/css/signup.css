@@ -68,6 +68,12 @@
     src: url('../font/NotoSansKR-Thin.otf');
 }
 
+.signup-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -278,4 +284,30 @@ input::placeholder{
 .btn-signup-nextstep{
     width: 183px;
     height: 45px;
+}
+
+.signup-term-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.term-text{
+    margin-left: 6px;
+    font-family: Noto-Sans-KR-Light;
+    font-size: 12px;
+    color: #343434;
+}
+
+.btn-term-checked{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.btn-term-not-checked{
+    width: 20px;
+    height: 20px;
+    display: block;
 }
