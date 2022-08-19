@@ -1,7 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.hashers import make_password
-from .models import Profile
 import json
 from django.http import JsonResponse
 from django.views import View
@@ -33,15 +32,15 @@ def signup(request):   #회원가입 페이지를 보여주기 위한 함수
                 return JsonResponse({'MESSAGE':'INVALID_EMAIL_ADDRESS'}, status=400)
         
         #입력한 이메일이 이미 존재할 경우
-        elif Profile.objects.filter(email = email).exists():
-                return JsonResponse({'MESSAGE':'ALREADY_EXISTS_EMAIL'}, status=400)
+        # elif Profile.objects.filter(email = email).exists():
+        #         return JsonResponse({'MESSAGE':'ALREADY_EXISTS_EMAIL'}, status=400)
         
         elif KeyError :
             return JsonResponse({'MESSAGE':"KEY_ERROR"}, status = 400)
 
-        else :
-            user = Profile(username=username, password=make_password(password))
-            user.save()
+        # else :
+            # user = Profile(username=username, password=make_password(password))
+            # user.save()
     return render(request, 'signup.html', res_data) #signup를 요청받으면 signup.html 로 응답.
 
 # def signup(request):
