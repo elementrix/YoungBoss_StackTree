@@ -1,0 +1,75 @@
+.title {
+    position: absolute;
+    width: 285px;
+    height: 69px;
+    left: 458px;
+    top: 84px;
+}
+
+.language_explain_title{
+    position: absolute;
+    width: 65px;
+    height: auto;
+    left: 459px;
+    top: 176px;
+
+}
+
+.python_explain{
+    position: absolute;
+    width: 586px;
+    height: auto;
+    left: 458px;
+    top: 205px;
+}
+
+.syntax_title {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    left: 459px;
+    top: 259px;
+
+}
+
+.syntax_list {
+    position: absolute;
+    width: 279px;
+    height: auto;
+    left: 452px;
+    top: 312.83px;
+
+}
+
+.learning_title{
+    position: absolute;
+    width: 273px;
+    height: 27px;
+    left: 452px;
+    top: 1020px;
+}
+
+.apply1{
+    position: absolute;
+    width: 142px;
+    height: 228px;
+    left: 450px;
+    top: 1065px;
+}
+
+.apply2{
+    position: absolute;
+    width: 142px;
+    height: 228px;
+    left: 610px;
+    top: 1064px;
+}
+
+.apply_title{
+    position: absolute;
+    width: 285px;
+    height: 27px;
+    left: 452px;
+    top: 1365px;
+}
+
