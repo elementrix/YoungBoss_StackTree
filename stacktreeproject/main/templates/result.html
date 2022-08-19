@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<head>
+    {% load static %}   
+    
+    {% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <title>Search Result</title>
+    {% endblock %}
+</head>
+
+
+{% block content %}
+
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+
+        <div class="seach">
+            <input name="search" type="search" placeholder="검색어를 적어주세요">
+            <img class="ico-result-search" src="{% static 'img/ico_result_search.png' %}">
+        </div>
+        
+        
+
+{% endblock %}

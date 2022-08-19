@@ -4,3 +4,7 @@ from django.shortcuts import render
 def main(request):
 
     return render(request, 'main.html')
+
+def result(request):
+
+    return render(request, 'result.html')
