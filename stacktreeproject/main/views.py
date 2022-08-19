@@ -8,3 +8,7 @@ def main(request):
 def result(request):
 
     return render(request, 'result.html')
+
+def mypage(request):
+
+    return render(request, 'mypage.html')

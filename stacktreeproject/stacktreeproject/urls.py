@@ -22,4 +22,5 @@ urlpatterns = [
     path('', main.views.main, name = 'main'),
     path('result/', main.views.result, name = 'result'),
     path('account/', include('account.urls')),
+    path('mypage/', main.views.mypage, name = 'mypage'),
 ]
