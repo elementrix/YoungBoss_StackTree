@@ -76,42 +76,85 @@ form {
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 5vh;
     margin-bottom: auto;
 }
 
 .signup-head {
-    text-align: center;
-    margin-top: 45px;
-}
+    width: 385px;
+    height: 75px;
+    flex-grow: 0;
+    margin: 0 0 16px 2px;
+    object-fit: contain;
+    background-image: linear-gradient(98deg, #269f71 20%, #e5c71b 64%);
 
-.signup-subhead {
-    text-align: center;
-    margin-top: 30px;
+    font-family: IBM-Plex-Sans-Bold;
+    font-size: 50px;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .choose-button {
-    text-align: center;
     margin-top: 39.8px;
     white-space: nowrap;
 }
 
+.title-question {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-signup-subhead {
+    width: 276px;
+    height: 56px;
+}
+
+.choose-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .btn-signup-choosebutton1 {
-    margin-right: 17px;
+    width: 128px;
+    height: 20px;
 }
 
 .btn-signup-choosebutton2 {
-    margin-right: 17px;
+    width: 152px;
+    height: 20px;
+    margin-left: 17px;
+}
+
+.btn-signup-choosebutton3{
+    width: 70px;
+    height: 20px;
+    margin-left: 17px;
+}
+
+.text-green {
+    color: #269F71;
+    font-family: Noto-Sans-KR-Bold;
+    font-size: 18px;
+}
+
+.text-black {
+    color: #343434;
+    font-family: Noto-Sans-KR-Bold;
+    font-size: 18px;
 }
 
 
 .name{
     margin-top: 26px;
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 
 .nickname{
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 
 
@@ -125,9 +168,9 @@ h1 {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    width: 600px;
+    width: 385px;
     text-align: right;
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 
 .password-caution-message {
@@ -135,8 +178,8 @@ h1 {
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    width: 600px;
-    margin-bottom: 26px;
+    width: 385px;
+    margin-bottom: 8px;
 }
 
 input {
@@ -152,13 +195,11 @@ input {
     font-size: 18px;
     color: #269F71;
 
-    width: 368px;
-    height: 23px;
-    width: 450px;
-    height: 50px;
+    width: 375px;
+    height: 35px;
     flex-grow: 0;
     margin: 8px 2px 8px 0;
-    padding: 8px 190px 10px 16px;
+    padding: 0px 0px 4px 16px;
     border-radius: 40px;
     border: solid 1px #d9d9d9;
     background-color: #fff;
@@ -168,7 +209,8 @@ input {
 
 input::placeholder{
     font-family: Noto-Sans-KR-Regular;
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom: 5px;
     color: #d9d9d9;
 }
 
@@ -200,23 +242,29 @@ input::placeholder{
 }
 
 .ico-signup-closedeyes {
+    width: 21px;
+    height: 17px;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
     margin-bottom: 5px;
-    margin-left: 580px;
+    margin-left: 340px;
+    margin-top: 4px;
 }
 
 .ico-signup-opendeyes {
+    width: 23px;
+    height: 15px;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
     margin-bottom: 5px;
-    margin-left: 580px;
+    margin-left: 341px;
+    margin-top: 4px;
 }
 
 .next-step {
@@ -225,4 +273,9 @@ input::placeholder{
     border: 0;
     outline: 0;
     background-color: white;
+}
+
+.btn-signup-nextstep{
+    width: 183px;
+    height: 45px;
 }
