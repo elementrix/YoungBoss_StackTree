@@ -93,13 +93,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+html,body {
+    height: 100%;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -149,4 +146,55 @@ table {
 
     color: #343434;
     margin-left: 1vw;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    height: 65px;
+
+    list-style: none;
+    
+    background: #F6F6F6;
+
+    width: 100%;
+    position: absolute;  
+    bottom: 0;
+    left: 0;
+}
+
+.footer-copyright{
+    font-family: Noto-Sans-KR-Light;
+    font-size: 14px;
+
+    margin-left: 24%;
+
+    color: #c1c1c1;
+}
+
+.footer-rightside {
+    display: flex;
+    flex-direction: row;
+    margin-right: 24%;
+}
+
+.footer-item {
+    font-family: Noto-Sans-KR-Light;
+    text-decoration: none;
+    font-size: 14px;
+
+    color: #9d9d9d;
+    margin-left: 4px;
+}
+
+#body-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#body-content {
+    padding-bottom: 65px;
 }
