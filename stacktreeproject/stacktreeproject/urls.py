@@ -20,5 +20,6 @@ import main.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main.views.main, name = 'main'),
+    path('result/', main.views.result, name = 'result'),
     path('account/', include('account.urls')),
 ]
