@@ -1,82 +1,114 @@
-.contents{
-    display: flex;
-    justify-content: center;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: 'IBM-Plex-Sans-Bold';
+    src: url('../font/IBMPlexSansKR-Bold.otf');
 }
 
-.title {
-    width: 285px;
-    height: 69px;
-    left: 458px;
-    top: 84px;
+@font-face {
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    src: url('../font/IBMPlexSansKR-SemiBold.otf');
 }
 
-.language_explain_title{ 
-    width: 65px;
-    height: auto;
-    left: 459px;
-    top: 176px;
-
+@font-face {
+    font-family: 'IBM-Plex-Sans-ExtraLight';
+    src: url('../font/IBMPlexSansKR-ExtraLight.otf');
 }
 
-.python_explain{ 
-    width: 586px;
-    height: auto;
-    left: 458px;
-    top: 205px;
+@font-face {
+    font-family: 'IBM-Plex-Sans-Light';
+    src: url('../font/IBMPlexSansKR-Light.otf');
 }
 
-.syntax_title {  
-    width: 85px;
-    height: auto;
-    left: 459px;
-    top: 259px;
-
+@font-face {
+    font-family: 'IBM-Plex-Sans-Medium';
+    src: url('../font/IBMPlexSansKR-Medium.otf');
 }
 
-.syntax_list {
-   
-    width: 279px;
-    height: auto;
-    left: 452px;
-    top: 312.83px;
-
+@font-face {
+    font-family: 'IBM-Plex-Sans-Regular';
+    src: url('../font/IBMPlexSansKR-Regular.otf');
 }
 
-.learning_title{
-    width: 273px;
-    height: 27px;
-    left: 452px;
-    top: 1020px;
+@font-face {
+    font-family: 'IBM-Plex-Sans-Text';
+    src: url('../font/IBMPlexSansKR-Text.otf');
 }
 
-.apply1{
-   
-    width: 142px;
-    height: 228px;
-    left: 450px;
-    top: 1065px;
+@font-face {
+    font-family: 'IBM-Plex-Sans-Thin';
+    src: url('../font/IBMPlexSansKR-Thin.otf');
 }
 
-.apply2{
-   
-    width: 142px;
-    height: 228px;
-    left: 610px;
-    top: 1064px;
+@font-face {
+    font-family: 'Noto-Sans-KR-Black';
+    src: url('../font/NotoSansKR-Black.otf');
 }
 
-.apply_title{
-   
-    width: 285px;
-    height: 27px;
-    left: 452px;
-    top: 1365px;
+@font-face {
+    font-family: 'Noto-Sans-KR-Bold';
+    src: url('../font/NotoSansKR-Bold.otf');
 }
 
-.to_learn{
-   
-    width: 684px;
-    height: 146px;
-    left: 450px;
-    top: 1402px;
+@font-face {
+    font-family: 'Noto-Sans-KR-Light';
+    src: url('../font/NotoSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Medium';
+    src: url('../font/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Regular';
+    src: url('../font/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Thin';
+    src: url('../font/NotoSansKR-Thin.otf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+html,body {
+    height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
