@@ -4,11 +4,38 @@
     {% load static %}   
     
     {% block extrahead %}
+    <script src="https://kit.fontawesome.com/641224def3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>Stack Tree Main</title>
     {% endblock %}
 </head>
 
 {% block content %}
+    <div class="banner">
+        <div class="banner_img">
+        </div>
+        <div class="comment">
+            어서오세요, 용사님!<br>
+            개발의 던전에 오신 것을 환영합니다
+        </div>
+        <div class="line">
+        </div>
+        <div class="small_comment">
+            캐릭터를 생성하고 용사님만의 개발여정을 시작하세요
+        </div>
+    </div>
+    
+    <div class="search_bar">
+        <div class="small_title">
+            직업선택창
+        </div>
+        <div class="title">
+            앞으로의 모험을 함께할 스킬과 직업을 검색해보세요
+        </div>
+        <div class="search">
+            <div class="fa-solid fa-magnifying-glass"></div>
+            <div class="placeholder"><input type="search" placeholder="무엇이든 물어보세요"></div>
+        </div>
 
+    </div>
 {% endblock %}

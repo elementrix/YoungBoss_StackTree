@@ -112,3 +112,72 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.banner{
+    text-align:center;
+}
+
+.banner_img {
+    width:1342px;
+    height:364px;
+    border-radius: 0px 0px 20px 20px;  
+    background-color:#343434;
+    position:relative;
+    left:380px;
+}
+
+.comment{
+    font-size:36px;
+    font-family:IBM-Plex-Sans-Bold ;
+    color:#ffffff;
+    position: absolute;
+    top:113px;
+    left:800px;
+}
+
+.line{
+    border-top:solid #ffffff 1px;
+    border-bottom:solid #ffffff 1px;
+    width:150px;
+    height:56px;
+    position: absolute;
+    left:850px;
+    top:260px;
+
+}
+
+.small_comment{
+    font-size:18px;
+    font-family: 'Noto-Sans-KR-Medium';
+    position:absolute;
+    top:275px;
+    left:850px;
+    color:#ffffff;
+
+}
+.small_title{
+    color:#269f71;
+    font-family: IBM-Plex-Sans-Bold;
+    margin-left: 699px;
+    margin-top: 24px;
+    font-size: 15px;
+}
+
+.title{
+    color:#343434;
+    font-family: IBM-Plex-Sans-Bold;
+    font-size:27px;
+    margin-left: 699px;
+}
+
+
+
+.search{
+    display: flex;
+    border:solid linear-gradient(96deg, #00a355 40%, #e5c71b 68%);
+    border-radius: 23.5px;
+    width:884px;
+    height:47px;
+    margin-top: 17px;
+    margin-left:537px;
+}
