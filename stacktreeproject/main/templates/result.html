@@ -5,11 +5,15 @@
     
     {% block extrahead %}
     <link rel="stylesheet" href="{% static 'css/result.css' %}">
+    <!-- <link rel="stylesheet" href="/stacktreeproject/staticfiles/css/result.css" type="text/css"> -->
+    <style type="text/css">
+        @import url("result.css");
+    </style>
     <title>Search Result</title>
     {% endblock %}
 </head>
 
-
+<body>
 {% block content %}
     <div class="signup-contents">
 
@@ -31,5 +35,5 @@
         
 
     </div>
-
 {% endblock %}
+</body>
