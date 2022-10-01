@@ -160,11 +160,3 @@ input::placeholder{
     height: 160px;
 }
 
-.stack-title{
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
-    font-family: IBMPlexSansKR;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: left;
-    color: #343434;
-}
