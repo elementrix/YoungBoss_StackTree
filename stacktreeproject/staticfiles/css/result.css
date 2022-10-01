@@ -160,16 +160,11 @@ input::placeholder{
     height: 160px;
 }
 
-.stack_title{
-    flex-grow: 0;
+.stack-title{
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
-    font-family: 'IBMPlexSansKR';
-    font-size: 18px;
+    font-family: IBMPlexSansKR;
+    font-size: 100px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #343434;
 }
