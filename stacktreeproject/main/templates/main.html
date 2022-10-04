@@ -12,30 +12,291 @@
 
 {% block content %}
     <div class="banner">
-        <div class="banner_img">
+        <div class="banner-img">
+            <img src="{% static 'img/main_img_x2.png' %}">
         </div>
-        <div class="comment">
-            어서오세요, 용사님!<br>
-            개발의 던전에 오신 것을 환영합니다
-        </div>
-        <div class="line">
-        </div>
-        <div class="small_comment">
-            캐릭터를 생성하고 용사님만의 개발여정을 시작하세요
+        <div class="center-comment">
+            <div class="comment">
+                어서오세요, 용사님!<br>
+                개발의 던전에 오신 것을 환영합니다
+            </div>
+            <div class="white-line-upper">
+                <img src="{% static 'img/Line 32-x2.png' %}">
+            </div>
+            <div class="small-comment">
+                캐릭터를 생성하고 용사님만의 개발여정을 시작하세요
+            </div>
+            <div class="white-line-below">
+                <img src="{% static 'img/Line 32-x2.png' %}">
+            </div>
+
+            <div class="character">
+                <div class="button-line left"><img src="{% static 'img/Line 34-x2.png' %}"></div>
+                <div class="button-comment">지금 바로 캐릭터 생성</div>
+                <div class="button-line right"><img src="{% static 'img/Line 33-x2.png' %}"></div>
+            </div>
         </div>
     </div>
-    
-    <div class="search_bar">
-        <div class="small_title">
-            직업선택창
+
+    <div class="hot-skills">
+        <div>
+            <span class="s-title">
+                지금 용사님들 사이에서
+            </span>
         </div>
-        <div class="title">
-            앞으로의 모험을 함께할 스킬과 직업을 검색해보세요
+        <div>
+            <span class="b-title">
+                HOT한 스킬들 모아보기
+            </span>
         </div>
-        <div class="search">
-            <div class="fa-solid fa-magnifying-glass"></div>
-            <div class="placeholder"><input type="search" placeholder="무엇이든 물어보세요"></div>
+    </div>
+
+        <div class="hot-rank">
+            <div class="rank">
+                <div class="rank-num">1</div>
+                <div class="rank-content">
+
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                    
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+
+                        <div class="rank-name">
+                            Python
+                        </div>
+                    </div>
+                    
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #언어
+                        </div>
+
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank">
+                <div class="rank-num">2</div>
+                <div class="rank-content">
+
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                    
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+
+                        <div class="rank-name">
+                            Java Script
+                        </div>
+                    </div>
+                    
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #언어
+                        </div>
+
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank">
+                <div class="rank-num">3</div>
+                <div class="rank-content">
+
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                    
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+
+                        <div class="rank-name">
+                            Jupyter Notebook
+                        </div>            
+                    </div>
+                    
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #웹 어플리케이션
+                        </div>
+
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rank">
+                <div class="rank-num">4</div>
+                <div class="rank-content">
+        
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                            
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+        
+                        <div class="rank-name">
+                            GitLab
+                        </div>
+                    </div>
+                            
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #웹서비스
+                        </div>
+        
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank">
+                <div class="rank-num">5</div>
+                <div class="rank-content">
+        
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                            
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+        
+                        <div class="rank-name">
+                            Tensor Flow
+                        </div>
+                    </div>
+                            
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #라이브러리
+                        </div>
+        
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank">
+                <div class="rank-num">6</div>
+                <div class="rank-content">
+        
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                            
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+        
+                        <div class="rank-name">
+                            R
+                        </div>
+                    </div>
+                            
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #웹서비스
+                        </div>
+        
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rank">
+                <div class="rank-num">7</div>
+                <div class="rank-content">
+        
+                    <div class="rank-img">
+                        <img src="{% static 'img/Rectangle 76-x2.png' %}">
+                    </div>
+                            
+                    <div class="rank-comment">
+                        <div class="rank-how-many-users">
+                            <div class="rank-percent">
+                                80%
+                            </div>
+                            <div class="rank-users">
+                                의 용사님이 이 스킬을 가지고 있어요
+                            </div>
+                        </div>
+        
+                        <div class="rank-name">
+                            Fire Base
+                        </div>
+                    </div>
+                            
+                    <div class="rank-etc">
+                        <div class="rank-tag">
+                            #웹서비스
+                        </div>
+        
+                        <div class="rank-go-detail">
+                            자세히 보러가기
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
         </div>
 
-    </div>
 {% endblock %}
