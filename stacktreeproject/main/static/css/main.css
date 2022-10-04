@@ -123,11 +123,13 @@ table {
 .banner-img{
     justify-content: center;
 }
+
 .banner-img img{
-    width:1342px;
-    height:364px;
+    width: 75%;
+    height: auto;
     border-radius: 0px 0px 20px 20px;  
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    aspect-ratio: 3.68 / 1;
 }
 
 
@@ -135,27 +137,27 @@ table {
     font-size:36px;
     font-family:IBM-Plex-Sans-Bold ;
     color:#ffffff;
-    position: absolute;
+    /* position: absolute; */
     justify-content: center;
     text-shadow: 0 0 6px #000;
-    left: 50%;
+    /* left: 50%;
     transform: translate(-50%, 0%);
-    top:105px;
+    top:105px; */
 }
 
 .white-line-upper img{
-    position:absolute;
+    /* position:absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    top:250px;
+    top:250px; */
     width:150px;
 }
 
 .white-line-below img{
-    position:absolute;
+    /* position:absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    top:305px;
+    top:305px; */
     width:150px;
 }
 
@@ -168,10 +170,11 @@ table {
     background:linear-gradient(94deg, #269f71 15%, #e5c71b 73%);
     width:357px;
     height:33px;
-    position:absolute;
+    margin-top: 10px;
+    /* position:absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    top:345px;
+    top:345px; */
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -188,17 +191,22 @@ table {
     padding-bottom: 4px;
 }
 
+.small-comment-area{
+    margin: 10px 0px 10px 0px;
+}
+
 
 .small-comment{
     font-size:18px;
+    margin-top: 3px;
     font-family: 'Noto-Sans-KR-Medium';
-    position:absolute;
+    /* position:absolute;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); */
     color:#ffffff;
-    top:265px;
-
+    /* top:265px; */
 }
+
 .small-title{
     color:#269f71;
     font-family: IBM-Plex-Sans-Bold;
@@ -251,8 +259,7 @@ table {
     font-size: 36px;
     color:#343434;
     font-family: 'IBM-Plex-Sans-Bold';
-    padding-top: 10px;
-    padding-right: 4px;
+    margin: auto 16px auto 0px;
 }
 
 .rank-content{
@@ -298,6 +305,10 @@ table {
 .rank-etc{
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: 9px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .rank-name{
@@ -310,18 +321,15 @@ table {
 }
 
 .rank-tag{
-    width:32px;
+    width:auto;
     height:16px;
     border-radius: 19.5px;
     background-color: #269f71;
     font-size: 8px;
     font-family: 'Noto-Sans-KR-Regular';
     color:#ffffff;
-    padding-left: 5px;
-    padding-top:1px;
-    margin-left: 60px;
-    margin-top:14px;
-   
+    padding: 1px 5px 1px 5px;
+    margin: 0 0 0 auto;
 }
 
 .rank-go-detail{
@@ -343,4 +351,13 @@ table {
 .rank-how-many-users{
     display: flex;
     padding-top: 7px;
+}
+
+.center-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top : 6vw;
 }
