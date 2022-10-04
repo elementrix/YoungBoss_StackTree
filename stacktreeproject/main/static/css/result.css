@@ -229,6 +229,7 @@ input::placeholder{
     display:block;
     margin:auto;
 }
+
 .tag-btn-green{
     width: 29px;
     height: 14px;
@@ -241,6 +242,7 @@ input::placeholder{
     float:left;
     margin-top: 5px;
 }
+
 .tag-btn-hashtag{
     width: 20px;
     height: 12px;
@@ -258,3 +260,14 @@ input::placeholder{
     display:block;
 }
 
+.signup-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+.gray-line {
+    width: 100%;
+}
