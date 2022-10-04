@@ -135,6 +135,7 @@ input::placeholder{
     font-weight: bold;
     text-align: left;
     color: #343434;
+    margin-left: 10px;
 }
 
 .stack-explain{
@@ -149,12 +150,19 @@ input::placeholder{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 10px;
+}
+
+.lang-text{
+    float:left;
+    display:inline;
+    flex-direction: row;
+    margin-left: 10px;
 }
 
 .lang-name{
     width: 62px;
     height: 18px;
-    flex-direction: column;
     font-family: NotoSansKR;
     font-size: 18px;
     font-weight: 500;
@@ -164,12 +172,15 @@ input::placeholder{
     letter-spacing: normal;
     text-align: left;
     color: #343434;
+    display: inline;
+    flex-direction: column;
+    float:left;
+    margin-top: 5px;
 }
 
 .lang-explain{
     width: 612px;
     height: 18px;
-    flex-direction:column;
     font-family: IBMPlexSansKR;
     font-size: 12px;
     font-weight: 300;
@@ -177,8 +188,11 @@ input::placeholder{
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: left;
     color: #343434;
+    display:block;
+    flex-direction:column;
+    margin-top: 5px;
+    padding-left: 5px;
 }
 
 .lang-square{
@@ -188,6 +202,8 @@ input::placeholder{
     border: solid 1px #d9d9d9;
     background-color: #fff;
     border-radius:5px;
+    float:left;
+    margin-left: 10px;
 }
 
 .lang-logo{
@@ -220,6 +236,10 @@ input::placeholder{
     flex-grow: 0;
     border-radius: 19.5px;
     background-color: #269f71;
+    display:inline;
+    flex-direction: row;
+    float:left;
+    margin-top: 5px;
 }
 .tag-btn-hashtag{
     width: 20px;
@@ -229,9 +249,12 @@ input::placeholder{
     font-family: NotoSansKR;
     font-weight: 500;
     text-align: center;
-    display:block;
     margin:auto;
     padding-top:3px;
     color: #fff;
+}
+
+.lang-description{
+    display:block;
 }
 
