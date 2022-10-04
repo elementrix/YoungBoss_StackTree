@@ -135,7 +135,6 @@ input::placeholder{
     font-weight: bold;
     text-align: left;
     color: #343434;
-    margin-left: 10px;
 }
 
 .stack-explain{
@@ -150,14 +149,13 @@ input::placeholder{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 10px;
+
 }
 
 .lang-text{
     float:left;
-    display:inline;
+    display:flex;
     flex-direction: row;
-    margin-left: 10px;
 }
 
 .lang-name{
@@ -172,15 +170,12 @@ input::placeholder{
     letter-spacing: normal;
     text-align: left;
     color: #343434;
-    display: inline;
+    display: flex;
     flex-direction: column;
     float:left;
-    margin-top: 5px;
 }
 
 .lang-explain{
-    width: 612px;
-    height: 18px;
     font-family: IBMPlexSansKR;
     font-size: 12px;
     font-weight: 300;
@@ -189,10 +184,8 @@ input::placeholder{
     line-height: normal;
     letter-spacing: normal;
     color: #343434;
-    display:block;
+    display:flex;
     flex-direction:column;
-    margin-top: 5px;
-    padding-left: 5px;
 }
 
 .lang-square{
@@ -203,7 +196,6 @@ input::placeholder{
     background-color: #fff;
     border-radius:5px;
     float:left;
-    margin-left: 10px;
 }
 
 .lang-logo{
@@ -211,7 +203,7 @@ input::placeholder{
     height:26px;
     border-radius: 5px;
     text-align: center;
-    display: block;
+    display: flex;
     margin:auto;
     padding-top:8px;
 }
@@ -226,7 +218,7 @@ input::placeholder{
     text-align: center;
     color: #343434;
     line-height: 12px;
-    display:block;
+    display:flex;
     margin:auto;
 }
 
@@ -237,10 +229,6 @@ input::placeholder{
     flex-grow: 0;
     border-radius: 19.5px;
     background-color: #269f71;
-    display:inline;
-    flex-direction: row;
-    float:left;
-    margin-top: 5px;
 }
 
 .tag-btn-hashtag{
@@ -256,10 +244,6 @@ input::placeholder{
     color: #fff;
 }
 
-.lang-description{
-    display:block;
-}
-
 .signup-contents{
     display: flex;
     flex-direction: column;
@@ -270,4 +254,15 @@ input::placeholder{
 
 .gray-line {
     width: 100%;
+}
+
+.stack-group{
+    width:100%;
+    margin:auto;
+}
+
+.lang-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
