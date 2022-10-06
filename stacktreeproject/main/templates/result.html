@@ -15,55 +15,113 @@
 
 <body>
 {% block content %}
-    <div class="signup-contents">
+    <div class="result-area">
+        <div class="search-bar-area">
 
-            <div class="searchbar">
-                <input type="text" placeholder="검색어 입력">
+            <div class="search-bar-wrapper">
+
+                <input type="text" class="search-bar">
+
                 <img class="ico-result-search" src="{% static 'img/ico_result_search.png' %}">
-            </div>
-            <div class="hashtag">
-            
+
             </div>
 
-            <div class="stack-box">
-                <p class="stack-title">
-                    스킬/Stack
+            <div class="keyword-tag-area">
+                <p class="keyword-tag">
+                    #Python
                 </p>
-                <p class="stack-explain">
-                    검색어를 바탕으로 검색된 스킬
-                </p>
-                <img class="gray-line" src="{% static 'img/Line.jpg' %}">
 
-                <div class="stack-group">
-                    <div class="lang-square">
-                        <img class="lang-logo" src="{% static 'img/python_logo.png' %}">
-                        <p class="logo-name">
-                            python
-                        </p>
-                    </div>
-                    <div class="lang-description">
-                        <div class="lang-text"> 
-                            <p class="lang-name">
-                                python
-                            </p>
-                            <div class="tag-btn-green">
-                                <p class="tag-btn-hashtag">
-                                    #언어
-                                </p>        
-                            </div>
-                        </div> 
-                        <span class="lang-explain">
-                            결과에 대한 설명이 들어갑니다 결과에 대한 설명이 들어갑니다 결과에 대한 설명이 들어갑니다
-                        </span>
-                    </div>
+                <p class="keyword-tag">
+                    #Java
+                </p>
+
+                <p class="keyword-tag">
+                    #Front-End
+                </p>
+
+                <p class="keyword-tag">
+                    #C++
+                </p>
+
+                <p class="keyword-tag">
+                    #카카오
+                </p>
+
+                <p class="keyword-tag">
+                    #네이버
+                </p>
+
+            </div>
+    
+        </div>
+
+        <div class="result-contents-area">
+
+            <div class="result-contents">
+
+                <div class="stack-contents">
+
                 </div>
 
-                
-            </div>
-        
-        
-        
+                <div class="job-contents">
 
+                </div>
+
+            </div>
+
+            <div class="keyword-rank">
+
+            </div>
+        </div>
     </div>
+
+
+<!-- 
+    <div class="signup-contents">
+
+        <div class="searchbar">
+            <input type="text" placeholder="검색어 입력">
+            <img class="ico-result-search" src="{% static 'img/ico_result_search.png' %}">
+        </div>
+        <div class="hashtag">
+        
+        </div>
+
+        <div class="stack-box">
+            <p class="stack-title">
+                스킬/Stack
+            </p>
+            <p class="stack-explain">
+                검색어를 바탕으로 검색된 스킬
+            </p>
+            <img class="gray-line" src="{% static 'img/Line.jpg' %}">
+
+            <div class="stack-group">
+                <div class="lang-square">
+                    <img class="lang-logo" src="{% static 'img/python_logo.png' %}">
+                    <p class="logo-name">
+                        python
+                    </p>
+                </div>
+                <div class="lang-description">
+                    <div class="lang-text"> 
+                        <p class="lang-name">
+                            python
+                        </p>
+                        <div class="tag-btn-green">
+                            <p class="tag-btn-hashtag">
+                                #언어
+                            </p>        
+                        </div>
+                    </div> 
+                    <span class="lang-explain">
+                        결과에 대한 설명이 들어갑니다 결과에 대한 설명이 들어갑니다 결과에 대한 설명이 들어갑니다
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    
+    </div> -->
 {% endblock %}
 </body>

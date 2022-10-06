@@ -1,0 +1,268 @@
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Bold';
+    src: url('../font/IBMPlexSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-SemiBold';
+    src: url('../font/IBMPlexSansKR-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-ExtraLight';
+    src: url('../font/IBMPlexSansKR-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Light';
+    src: url('../font/IBMPlexSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Medium';
+    src: url('../font/IBMPlexSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Regular';
+    src: url('../font/IBMPlexSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Text';
+    src: url('../font/IBMPlexSansKR-Text.otf');
+}
+
+@font-face {
+    font-family: 'IBM-Plex-Sans-Thin';
+    src: url('../font/IBMPlexSansKR-Thin.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Black';
+    src: url('../font/NotoSansKR-Black.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Bold';
+    src: url('../font/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Light';
+    src: url('../font/NotoSansKR-Light.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Medium';
+    src: url('../font/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Regular';
+    src: url('../font/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Noto-Sans-KR-Thin';
+    src: url('../font/NotoSansKR-Thin.otf');
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 394px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+input {
+    border:none;
+    border-right:0px;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+
+    background: transparent;
+
+    width: 884px;
+    height: 47px;
+    left: 573;
+    top: 105px;
+
+    background-color: #FFFFFF;
+    border-radius: 23.5px;
+    flex-grow: 0;
+    margin: 8px 2px 8px 0;
+    padding: 8px 20px 2px 50px;
+    border: solid 2px;
+    margin-bottom: 10px;
+
+    /* background: linear-gradient(90.33deg, #00A355 39.84%, #E5C71B 67.55%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+    border-image-source: linear-gradient(90.33deg, #00A355 39.84%, #E5C71B 67.55%); */
+
+
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-image-source: linear-gradient(96deg, #00a355 40%, #e5c71b 68%);
+    border-image-slice: 1;
+    border-color: linear-gradient(to bottom, #fff, #fff), linear-gradient(96deg, #00a355 40%, #e5c71b 68%);
+    background-origin: border-box;
+}
+
+input::placeholder{
+    font-family: Noto-Sans-KR;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #343434;
+}
+
+.ico-result-search {
+    position: relative;
+
+}
+.stack-title{
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    font-family: IBMPlexSansKR;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: #343434;
+}
+
+.stack-explain{
+    width: 148px;
+    height: 18px;
+    flex-grow: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(101deg, #269f71 33%, #e5c71b 70%);
+    font-family: IBMPlexSansKR;
+    font-size: 12px;
+    text-align: left;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.lang-text{
+    float:left;
+    display:flex;
+    flex-direction: row;
+}
+
+.lang-name{
+    width: 62px;
+    height: 18px;
+    font-family: NotoSansKR;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #343434;
+    display: flex;
+    flex-direction: column;
+    float:left;
+}
+
+.lang-explain{
+    font-family: IBMPlexSansKR;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #343434;
+    display:flex;
+    flex-direction:column;
+}
+
+.lang-square{
+    width: 50px;
+    height: 50px;
+    flex-grow: 0;
+    border: solid 1px #d9d9d9;
+    background-color: #fff;
+    border-radius:5px;
+    float:left;
+}
+
+.lang-logo{
+    width:26px;
+    height:26px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    margin:auto;
+    padding-top:8px;
+}
+
+.logo-name{
+    width: 26px;
+    height: 12px;
+    flex-grow: 0;
+    font-family: IBMPlexSansKR;
+    font-size: 8px;
+    font-weight: 500;
+    text-align: center;
+    color: #343434;
+    line-height: 12px;
+    display:flex;
+    margin:auto;
+}
+
+.tag-btn-green{
+    width: 29px;
+    height: 14px;
+    font-size: 8px;
+    flex-grow: 0;
+    border-radius: 19.5px;
+    background-color: #269f71;
+}
+
+.tag-btn-hashtag{
+    width: 20px;
+    height: 12px;
+    font-size: 8px;
+    flex-grow:0;
+    font-family: NotoSansKR;
+    font-weight: 500;
+    text-align: center;
+    margin:auto;
+    padding-top:3px;
+    color: #fff;
+}
+
+.signup-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+.gray-line {
+    width: 100%;
+}
+
+.stack-group{
+    width:100%;
+    margin:auto;
+}
+
+.lang-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
