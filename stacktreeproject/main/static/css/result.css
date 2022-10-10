@@ -199,16 +199,33 @@ input:focus {
 
 }
 
+.stack-color-title{
+    width:148px;
+    height:18px;
+    font-size: 12px;
+    font-family: 'IBM-Plex-Sans-Regular';
+    background: linear-gradient(99deg, #269f71 33%, #e5c71b 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
 .gray-line{
     width:100%;
     height: auto;
 }
 
 .gray-square{
-    border:solid;
+    border:1px solid;
+    border-radius:5px;
+    border-color: #d9d9d9;
     width: 50px;
     height: 50px;
     background-origin: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .language-logo{
@@ -216,9 +233,62 @@ input:focus {
     height:26px;
 }
 
+.language-logo-name{
+    font-family: 'IBM-Plex-Sans-Text';
+    font-size: 8px;
+    color: #343434;
+}
+
 .language-tag{
-    border: solid;
     width: 29px;
     height:14px;
     border-radius: 19.5px;
+    background-color: #269f71;
+    display:flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.language-tag-name{
+    font-size: 8px;
+    font-family: 'Noto-Sans-KR-Regular';
+    color:#ffff;
+    
+}
+
+.language-explain-title{
+    font-family: 'Noto-Sans-KR-Regular';
+    font-size: 18px;
+}
+
+.language-explain-content{
+    font-family: 'IBM-Plex-Sans-Light';
+    font-size: 12px;
+    color:#343434;
+    width: auto;
+    height: 18px;
+}
+
+.language-title-and-tag{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;   
+    align-items: baseline;
+}
+
+.language-text{
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    margin-top:0;
+}
+
+.language-stack-sort{
+    display:flex;
+    flex-direction: row;
 }
